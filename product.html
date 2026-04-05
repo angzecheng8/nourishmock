@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Salmon & Sweet Potato - Nourish</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+      .product-detail {
+        padding: 120px 2rem 4rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+      }
+      .product-gallery {
+        background-color: var(--color-cloud);
+        border-radius: var(--radius-lg);
+        min-height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        color: #888;
+      }
+      .product-info h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      .price {
+        font-size: 2rem;
+        color: var(--color-fulvous);
+        font-weight: 700;
+        margin-bottom: 2rem;
+      }
+      .badges {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+      .badge {
+        padding: 0.5rem 1rem;
+        background: var(--color-pear);
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+      /* Transparency Section */
+      .transparency-section {
+        background-color: var(--color-eerie-black);
+        color: var(--color-white);
+        padding: 5rem 2rem;
+        margin-top: 4rem;
+      }
+      .t-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .t-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        margin-top: 3rem;
+      }
+      .ingredient-box {
+        background: rgba(255,255,255,0.05);
+        padding: 2rem;
+        border-radius: var(--radius-md);
+      }
+      .ingredient-box h3 { margin-bottom: 1rem; color: var(--color-pear); }
+      .ingredient-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+      .not-in-food {
+        background: var(--color-fulvous);
+        padding: 2rem;
+        border-radius: var(--radius-md);
+        color: var(--color-white);
+      }
+      .not-in-food ul {
+        list-style: none;
+        margin-top: 1rem;
+      }
+      .not-in-food li {
+        margin-bottom: 0.8rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+      Humanization. Sustainability. Premiumization.
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="/" class="logo-wrapper">
+          <div style="background: var(--color-primary); width: 40px; height: 50px; border-radius: 50px 50px 0 50px; position:relative; display:flex; justify-content:center; align-items:flex-end; padding-bottom:5px;">
+            <div style="background: white; width: 25px; height: 25px; border-radius: 50%; display:flex; justify-content:center; align-items:center;">
+               <div style="background: var(--color-primary); width: 5px; height: 5px; border-radius: 50%;"></div>
+            </div>
+          </div>
+          <div class="text-logo">
+            <div class="logo-top">PET UNIVERSE</div>
+            <div class="logo-main">NO<span class="logo-u">U</span>RISH</div>
+            <div class="logo-sub">Humanising Pet Nutrition</div>
+          </div>
+        </a>
+
+        <div class="nav-links">
+          <a href="/shop.html">For Dogs</a>
+          <a href="/shop.html">For Cats</a>
+          <a href="/product.html">Why Nourish</a>
+          <a href="/quiz.html" class="text-accent">Take Test</a>
+        </div>
+
+        <div class="nav-actions">
+          <div class="search-bar">🔍 Search</div>
+          <div class="lang" style="font-weight: 600;">🌐 EN ⌄</div>
+        </div>
+      </div>
+    </nav>
+    <div class="sub-navbar">
+      Find the perfect food for your pet. <a href="/quiz.html" class="badge-btn">Take the test</a>
+    </div>
+
+    <!-- Product Detail -->
+    <main class="product-detail">
+      <div class="product-gallery">
+        [ Product Image Viewer ]
+      </div>
+      <div class="product-info">
+        <div class="badges">
+          <span class="badge">Grain-Free</span>
+          <span class="badge">Adult Dogs</span>
+        </div>
+        <h1>Premium Salmon & Sweet Potato</h1>
+        <div class="price">RM 85.00</div>
+        <p style="margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.6;">
+          Our signature recipe crafted with wild-caught salmon and easily digestible sweet potatoes. Formulated by vet nutritionists for dogs with sensitive stomachs or food allergies.
+        </p>
+        
+        <div style="margin-bottom: 2rem;">
+          <h4 style="margin-bottom: 1rem;">Select Size</h4>
+          <div style="display: flex; gap: 1rem;">
+            <button class="btn btn-secondary">2 kg</button>
+            <button class="btn btn-secondary">5 kg</button>
+            <button class="btn btn-secondary" style="border-color: var(--color-eerie-black); background: rgba(30,30,30,0.1);">10 kg</button>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" style="width: 100%; padding: 1.25rem; margin-bottom: 1rem;">Add to Cart - RM 85.00</button>
+        <button class="btn btn-secondary" style="width: 100%; padding: 1rem; color: var(--color-fulvous); border-color: var(--color-fulvous);">Buy via Shopee / Lazada</button>
+      </div>
+    </main>
+
+    <!-- Transparency Section -->
+    <section class="transparency-section">
+      <div class="t-container">
+        <h2 style="font-size: 3rem;">100% Transparent Nutrition</h2>
+        <div class="t-grid">
+          
+          <div class="ingredient-box">
+            <h3>Per-Product Ingredient Breakdown</h3>
+            <div class="ingredient-item"><span>Deboned Salmon</span> <span>40%</span></div>
+            <div class="ingredient-item"><span>Sweet Potato</span> <span>25%</span></div>
+            <div class="ingredient-item"><span>Peas & Carrots</span> <span>15%</span></div>
+            <div class="ingredient-item"><span>Chicken Fat (Preserved)</span> <span>10%</span></div>
+            <div class="ingredient-item"><span>Vitamins & Minerals</span> <span>10%</span></div>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+              <a href="#" style="text-decoration: underline;">View Full Glossary</a>
+            </p>
+          </div>
+
+          <div class="not-in-food">
+            <h3>What's NOT in our food</h3>
+            <ul>
+              <li>❌ No Artificial Preservatives (BHA/BHT)</li>
+              <li>❌ No Mystery Meat Meals</li>
+              <li>❌ No Corn, Wheat, or Soy Fillers</li>
+              <li>❌ No Artificial Colors or Flavors</li>
+              <li>❌ No China-Sourced Ingredients</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Sticky WhatsApp is populated via main.js or can be placed here -->
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
